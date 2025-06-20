@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--==== TITLE ====-->
+		<title>Tid</title>
+
+		<!--==== CSS ====-->
+		<link rel="stylesheet" href="assets/css/forgot.css" />
+
+		<!--==== BOOTSTRAP CSS ====-->
+		<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+		<!--==== Remix Icon ====-->
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container min-vh-100">
+			<div class="row mt-5 mb-5">
+				<div class="col-12">
+					<img src="./assets/img/TID LOGO.png" class="img-fluid" alt="" />
+				</div>
+			</div>
+
+			<div class="row d-flex justify-content-center align-items-center mt-5 pt-5">
+				<div id="forgot" class="box forgot-container block col-12">
+					<h5 class="text-center h5 mb-3">Forgot Password</h5>
+					<p class="text-center fs-6 mb-4">Enter the email address associated with your account and we will send you a link to reset your password</p>
+					<div class="mb-5">
+						<label for="email" class="form-label text-dark">Enter your Email address</label>
+						<input
+							type="email"
+							class="form-control form-control-lg bg-light fs-6"
+							id="email"
+							aria-describedby="emailHelp"
+							placeholder="Email Address" />
+					</div>
+
+					<span href="" type="submit" class="btn btn-primary w-100" id="continue">Continue</span>
+				</div>
+			</div>
+
+			<div class="row d-flex justify-content-center align-items-center">
+				<div id="confirm-container" class="box none col-12">
+					<div class="icon rounded me-auto ms-auto mb-4">
+						<i class="ri-mail-line fs-4"></i>
+					</div>
+
+					<h5 class="text-center h5 mb-3">Reset email sent</h5>
+
+					<p class="text text-center mb-4">We have just sent an email with a password reset link to ...<b>@gmail.com</b></p>
+
+					<div class="d-flex justify-content-center align-items-center">
+						<a href="reset.html" class="btn btn-primary me-4"> Continue </a>
+						<a href="" class="btn btn-out-primary"> Send Again </a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--==== BOOTSTRAP JS ====-->
+		<script src="./assets/js/bootstrap.js"></script>
+
+		<!--==== Js ====-->
+		<script src="./assets/js/forgot.js"></script>
+	</body>
+</html>

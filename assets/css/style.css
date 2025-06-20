@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/*=== Base ===*/
+* {
+	font-family: "Inter", sans-serif !important;
+}
+
+html {
+	scroll-behavior: smooth !important;
+}
+
+ul {
+	padding: 0 !important;
+	margin: 0 !important;
+	list-style: none !important;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+/*=== Reusable ===*/
+main {
+	overflow: hidden;
+}
+
+.section {
+	padding: 4.5rem 0 2rem !important;
+}
+
+.btn {
+	padding: 8px 45px !important;
+}
+
+.btn-primary {
+	background-color: var(--dark-blue-color) !important;
+}
+
+/*=== Variables Css ===*/
+:root {
+	/*========== Colors ==========*/
+	--dark-blue-color: #01005c;
+	--black-color: #00001f;
+	--black-light-color: #5e5e5e;
+	--dark-grey-color: #a2a2a2;
+	--grey-color: #d7d7d7;
+	--grey-light-color: #f9f9f9;
+	--white-color: #ffffff;
+	--card-gradient: linear-gradient(to bottom, #fff2 42%, #0009 90%);
+
+	/*========== z index ==========*/
+	--z-tooltip: 10;
+	--z-fixed: 100;
+}
+
+/*=== Nav ===*/
+.nav-link.active {
+	color: var(--dark-blue-color) !important;
+}
+
+.nav-link {
+	color: var(--black-light-color) !important;
+}
+
+.nav-link:hover {
+	color: var(--dark-blue-color) !important;
+}
+
+/*=== Hero ===*/
+.hero-title {
+	color: var(--dark-blue-color);
+}
+
+/*=== Energy ===*/
+.energy-slider {
+	padding: 10px 10px 55px 10px !important;
+}
+
+.energy-card {
+	position: relative;
+	border-radius: 15px;
+	box-shadow: 8px 8px 0px #f0f0f0;
+	overflow: hidden;
+}
+.energy-card::before {
+	position: absolute;
+	content: "";
+	background-image: var(--card-gradient);
+	inset: 0;
+}
+.energy-content {
+	position: absolute;
+	bottom: 5px;
+	left: 15px;
+	color: white;
+}
+.energy-card .img-container {
+	border-radius: 10px;
+	overflow: hidden;
+}
+.energy-title {
+	font-size: 1.15rem !important;
+}
+
+.energy-description {
+	font-size: 0.8rem;
+}
+
+/*=== Impact ===*/
+.impact-section {
+	position: relative;
+	padding: 4.5rem 0 4.5rem !important;
+	margin-top: 2rem !important;
+	color: var(--white-color);
+	background: linear-gradient(#02005ceb, #02005ceb), url(../img/Vector.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.impact-title {
+	font-size: 6rem;
+}
+
+/*=== Event ===*/
+.event-section {
+	background-image: url(../img/event-bg.png);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+
+.event-card {
+	position: relative !important;
+	display: inline-block;
+	border-radius: 1rem;
+	overflow: hidden;
+}
+.event-card::before {
+	position: absolute;
+	inset: 0;
+	background-image: var(--card-gradient);
+	content: "";
+}
+
+.event-description {
+	color: var(--white-color);
+	position: absolute;
+	right: 0;
+	bottom: 25px;
+	transform: translate(0, 50%);
+	text-align: center;
+	width: 100%;
+	z-index: var(--z-fixed);
+}
+
+/*=== Footer ===*/
+.footer {
+	padding: 3.5rem 0 3.5rem !important;
+	margin-top: 5rem;
+	background-color: var(--grey-light-color);
+	overflow: hidden;
+}
+.footer-title {
+	color: var(--dark-blue-color);
+}
+.footer-link {
+	color: var(--black-light-color) !important;
+}
+.footer-link:hover {
+	color: var(--black-color) !important;
+}
+.footer-social {
+	display: flex;
+	gap: 15px;
+}
+.footer-social-link i {
+	color: var(--black-color) !important;
+}
+.copy-section {
+	background-color: var(--dark-blue-color);
+}
+.copy-description {
+	font-size: 0.9rem;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 350px) {
+	.container {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+
+	.section {
+		padding: 3.5rem 0 1rem !important;
+	}
+
+	.impact-section {
+		margin-top: 2.5rem !important;
+		padding: 3.5rem 0 3.5rem !important;
+	}
+
+	.event-section {
+		background-position: bottom !important;
+		background-repeat: no-repeat;
+	}
+
+	.footer {
+		padding: 3rem 0 3rem !important;
+	}
+}
+
+/* For medium devices */
+@media screen and (min-width: 630px) {
+	.energy-card {
+		width: 350px !important;
+	}
+
+	.impact-section {
+		background-size: contain;
+	}
+
+	.footer {
+		padding: 4rem 0 4rem !important;
+	}
+}
+
+/* For large devices */
+@media screen and (min-width: 1023px) {
+	.section {
+		padding: 7.5rem 0 1.5rem !important;
+	}
+
+	.energy-card {
+		width: 450px !important;
+	}
+
+	.impact-section {
+		margin-top: 3.5rem !important;
+		padding: 7.5rem 0 7.5rem !important;
+	}
+
+	.footer {
+		padding: 5.5rem 0 5.5rem !important;
+	}
+}
+
+.modal .v-form-input .form-control {
+	min-height: 3rem;
+	border-width: 2px;
+}
+.modal .v-form-input .form-control::placeholder {
+	font-size: 0.9rem;
+	opacity: 0.8;
+}
+.modal .v-form-input .v-form-label {
+	margin-bottom: 3px;
+}
+.modal .v-form-input .form-control:focus {
+	border-color: var(--dark-blue-color);
+	box-shadow: none;
+}
+.modal .v-search {
+	background-color: var(--dark-blue-color);
+	color: var(--white-color);
+	font-size: 0.95rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 6px;
+	padding: 10px 1rem;
+	width: 100%;
+}

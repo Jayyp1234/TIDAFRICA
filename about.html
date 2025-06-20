@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--==== TITLE ====-->
+		<title>Tid . About</title>
+
+		<!--==== CSS ====-->
+		<link rel="stylesheet" href="assets/css/about.css" />
+
+		<!--==== BOOTSTRAP CSS ====-->
+		<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+		<!--==== Remix Icon ====-->
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+		<!--==== Swiper Css ====-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg">
+				<div class="container">
+					<a class="navbar-brand" href="index.html">
+						<img src="./assets/img/TID LOGO.png" alt="Logo image" class="img-fluid" />
+					</a>
+
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse mt-4 mt-lg-0" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html"> Home </a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#"> About </a>
+							</li>
+
+							<li class="nav-item">
+								<button type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#searchModal">
+									<i class="ri-search-line"></i>
+								</button>
+							</li>
+						</ul>
+
+						<div>
+							<a href="login.html" class="btn btn-primary text-break fw-semibold" type="submit">Log In</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<!-- modal @::start -->
+		<div
+			class="modal fade"
+			id="searchModal"
+			data-bs-backdrop="static"
+			data-bs-keyboard="false"
+			tabindex="-1"
+			aria-labelledby="staticBackdropLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header border-0">
+						<h1 class="modal-title fs-5" id="staticBackdropLabel">Search</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="v-form-input pb-4">
+							<label for="search" class="v-form-label">Enter search</label>
+							<input type="search" placeholder="Enter your search..." id="search" class="form-control" />
+						</div>
+						<button type="button" class="v-search">Search</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- modal @::end -->
+
+		<!--==== Main ====-->
+		<main>
+			<!--==== About ====-->
+			<section class="about-section section">
+				<div class="about-container">
+					<div class="col-12 row align-items-center justify-content-center g-4 m-0">
+						<div class="col-12 col-lg-7">
+							<div class="col-lg-10 mx-auto">
+								<h1 class="fs-1 fw-bolder mb-5" data-aos="fade-right">About Us</h1>
+								<p class="about-text fs-sm-6 fs-md-5 fs-lg-5 fs-6 mb-4" data-aos="fade-right" data-aos-delay="100">
+									The Industry Discourse, TID, is the largest student-led energy conference in Sub-Saharan Africa, which aims to create collaboration
+									and inspire students, academia, and energy professionals to work together to develop long-term solutions to Africa’s energy
+									problems.
+								</p>
+								<p class="about-text fs-sm-6 fs-md-5 fs-lg-5 fs-6 mb-3" data-aos="fade-right" data-aos-delay="300">
+									TID was conceived in 2019 by students of the Department of Petroleum and Gas Engineering at the University of Lagos with one goal:
+									to bridge the gap between students and the energy industry while crafting an ecosystem where energy interests solidify into
+									measurable impact. Over the years, we have successfully organized 3 editions and intend to do more to continuously foster
+									collaboration between the organizations in the energy industry and academia to catalyze much-needed change.
+								</p>
+							</div>
+						</div>
+
+						<div class="col-12 col-lg-5 p-lg-0">
+							<div class="about-img animate__animated animate__fadeInRight w-100">
+								<img src="./assets/img/about-img.jpg" class="img-fluid" alt="about image" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--==== Mission and Vision ====-->
+			<section class="mission-section section">
+				<div class="container">
+					<div class="col-12 row mx-0 align-items-center mb-5">
+						<div class="col-12 col-lg-6 d-flex flex-column align-items-center text-center text-md-start align-items-md-start row-gap-3">
+							<span class="v-icon" data-aos="fade-right">
+								<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 100 100">
+									<path
+										fill="currentColor"
+										d="m35.995 89.365l4.69-28.272a1.609 1.609 0 0 0-.449-1.401l-.002-.002a1.608 1.608 0 0 0-1.406-.447L10.63 64.007c-.594.1-1.081.525-1.264 1.1a1.607 1.607 0 0 0 .395 1.628l5.513 5.513L.473 87.05a1.608 1.608 0 0 0 0 2.277l10.2 10.201a1.61 1.61 0 0 0 2.278 0l14.802-14.802l5.515 5.515a1.614 1.614 0 0 0 1.63.394a1.608 1.608 0 0 0 1.097-1.27m28.011-78.73l-4.69 28.273a1.61 1.61 0 0 0 .449 1.4l.002.003c.37.367.893.534 1.406.447l28.196-4.766a1.61 1.61 0 0 0 .869-2.728l-5.513-5.513l14.802-14.802a1.61 1.61 0 0 0 0-2.278l-10.2-10.2a1.61 1.61 0 0 0-2.278 0L72.248 15.274l-5.515-5.515a1.61 1.61 0 0 0-2.727.876m25.359 53.371l-28.271-4.69a1.608 1.608 0 0 0-1.401.449l-.003.003a1.606 1.606 0 0 0-.447 1.406l4.765 28.196c.1.594.525 1.082 1.099 1.264a1.607 1.607 0 0 0 1.629-.395l5.513-5.513l14.803 14.803a1.61 1.61 0 0 0 2.277-.002l10.201-10.2a1.61 1.61 0 0 0 0-2.278L84.727 72.248l5.516-5.515a1.612 1.612 0 0 0-.878-2.727m-78.73-28.011l28.272 4.69a1.605 1.605 0 0 0 1.401-.449l.002-.003a1.61 1.61 0 0 0 .448-1.406L35.993 10.63a1.61 1.61 0 0 0-1.099-1.264a1.604 1.604 0 0 0-1.629.395l-5.513 5.513L12.951.473a1.61 1.61 0 0 0-2.278-.001L.472 10.673a1.61 1.61 0 0 0 0 2.278l14.801 14.802l-5.515 5.515a1.612 1.612 0 0 0 .877 2.727" />
+								</svg>
+							</span>
+
+							<h2 class="fs-1 fw-medium mb-1" data-aos="fade-right" data-aos-delay="150">Mission</h2>
+
+							<p class="fs-sm-6 fs-md-5 fs-lg-5 fs-6" data-aos="fade-right" data-aos-delay="300">
+								Motivating generations of forward-thinkers to drive disruptive innovative solutions in the energy landscape
+							</p>
+						</div>
+
+						<div class="col-12 col-lg-6"></div>
+					</div>
+
+					<div class="vision-info row g-5 align-items-center flex-sm-column-reverse flex-lg-row flex-column-reverse">
+						<div class="col-12 col-lg-6 mx-sm-auto mx-md-auto mx-lg-0 mx-auto">
+							<div class="vision-img" data-aos="zoom-in">
+								<img src="./assets/img/vision-img.jpg" class="img-fluid" alt="vision image" />
+							</div>
+						</div>
+
+						<div class="col-12 col-lg-6 d-flex flex-column align-items-center text-center text-md-start align-items-md-start row-gap-3">
+							<span class="v-icon" data-aos="fade-left">
+								<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+									<path
+										fill="currentColor"
+										d="M9 20h6v1c0 .55-.45 1-1 1h-4c-.55 0-1-.45-1-1zM19 9c0 2.38-1.19 4.47-3 5.74V17c0 .55-.45 1-1 1H9c-.55 0-1-.45-1-1v-2.26C6.19 13.47 5 11.38 5 9c0-3.87 3.13-7 7-7s7 3.13 7 7m-4.29-.71c-.39-.39-1.03-.39-1.42 0L12 9.59l-1.29-1.3c-.39-.39-1.03-.39-1.42 0s-.39 1.03 0 1.42l1.71 1.7V16h2v-4.59l1.71-1.7c.39-.39.39-1.03 0-1.42" />
+								</svg>
+							</span>
+							<h2 class="fs-1 fw-medium mb-1" data-aos="fade-left" data-aos-delay="150">Vision</h2>
+							<p class="fs-sm-6 fs-md-5 fs-lg-5 fs-6" data-aos="fade-left" data-aos-delay="300">
+								To foster a synergistic platform where the next energy solution stems from
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--==== Impact ====-->
+			<section class="impact-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 mb-5">
+							<h3 class="fs-2 fw-bolder mb-4">Our Impact</h3>
+
+							<p class="fs-sm-6 fs-md-5 fs-lg-5 fs-6">
+								Since TID’s inception in 2019, we have had three successful editions. The last edition, 3.0, witnessed young minds providing
+								innovative solutions to tackle the multifaceted dimensions of Africa’s energy crisis across different sectors with participation from
+								universities in 9 different countries across Africa: Nigeria, Ghana, Benin, Ethiopia, Madagascar, Malawi, Rwanda, Kenya and Namibia.
+							</p>
+						</div>
+					</div>
+
+					<div class="row g-5">
+						<div class="col-sm-12 col-md-6 col-lg-3">
+							<div class="impact-box text-center">
+								<h1 class="impact-title fw-bolder">
+									<span class="num" data-val="9"> 0 </span>
+								</h1>
+								<p>Countries influenced across Africa</p>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-6 col-lg-3">
+							<div class="impact-box text-center">
+								<h1 class="impact-title fw-bolder"><span class="num" data-val="25"> 00 </span>+</h1>
+								<p>Universities across Africa</p>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-6 col-lg-3">
+							<div class="impact-box text-center">
+								<h1 class="impact-title fw-bolder">
+									<span class="num" data-val="2000"> 0000 </span>
+								</h1>
+								<p>Students empowered across Africa</p>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-6 col-lg-3">
+							<div class="impact-box text-center">
+								<h1 class="impact-title fw-bolder">
+									<span class="num" data-val="5"> 0 </span>
+								</h1>
+								<p>Critical sectors recognized</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--==== Partners ====-->
+			<section class="section">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h3 class="fs-2 fw-bolder mb-4">Past Partners</h3>
+
+							<p class="fs-4">Sponsors</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper partner-swiper mt-3 mb-5">
+					<div class="swiper-wrapper sponsors-container">
+						<div class="swiper-slide sponsors-img">
+							<img src="./assets/img/partner-img1.png" alt="Partner image" class="" />
+						</div>
+
+						<div class="swiper-slide sponsors-img">
+							<img src="./assets/img/partner-img2.png" alt="Partner image" class="" />
+						</div>
+
+						<div class="swiper-slide sponsors-img">
+							<img src="./assets/img/partner-img3.png" alt="Partner image" class="" />
+						</div>
+
+						<div class="swiper-slide sponsors-img">
+							<img src="./assets/img/partner-img5.png" alt="Partner image" class="" />
+						</div>
+
+						<div class="swiper-slide sponsors-img">
+							<img src="./assets/img/partner-img8.png" alt="Partner image" class="" />
+						</div>
+
+						<div class="swiper-slide sponsors-img">
+							<img src="./assets/img/partner-img11.png" alt="Partner image" class="" />
+						</div>
+					</div>
+				</div>
+
+				<div class="container mt-1">
+					<div class="row">
+						<div class="col-12">
+							<p class="fs-4">Media</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="partner-swiper mt-3 mb-5">
+					<div class="sponsors-container">
+						<div class="sponsors-img">
+							<img src="./assets/img/partner-img6.png" alt="Partner image" class="" />
+						</div>
+
+						<div class="swiper-slide sponsors-img">
+							<img src="./assets/img/partner-img7.png" alt="Partner image" class="" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--==== Team ====-->
+			<section class="team-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 mb-3">
+							<h3 class="fs-2 fw-bolder mb-4">Our Team</h3>
+
+							<p class="fs-sm-6 fs-md-5 fs-lg-5 fs-6">
+								Driven by passion and innovation, TID began with a vision to foster collaboration between academia and industry. And so, from humble
+								beginnings, we have evolved into a global force, shaping the landscape of sustainable energy in Africa. Building upon the success of
+								our predecessors, TID 4.0 has assembled a dynamic team that relentlessly pushes boundaries, empowering students and engaging energy
+								stakeholders to proffer innovative solutions that make energy access a reality in Africa.
+							</p>
+						</div>
+					</div>
+
+					<div class="swiper team-slider">
+						<div class="team-wrapper swiper-wrapper">
+							<article class="team-card card swiper-slide">
+								<img src="./assets/img/team-img1.jpg" alt="team img" class="img-fluid" />
+
+								<h4 class="fs-3 fw-bolder mt-4">Racheal Agbanagba</h4>
+								<p>Conference Chair</p>
+							</article>
+
+							<article class="team-card card swiper-slide">
+								<img src="./assets/img/team-img2.jpg" alt="team img" class="img-fluid" />
+
+								<h4 class="fs-3 fw-bolder mt-4">Racheal Agbanagba</h4>
+								<p>Conference Chair</p>
+							</article>
+
+							<article class="team-card card swiper-slide">
+								<img src="./assets/img/team-img3.jpg" alt="team img" class="img-fluid" />
+
+								<h4 class="fs-3 fw-bolder mt-4">Racheal Agbanagba</h4>
+								<p>Conference Chair</p>
+							</article>
+
+							<article class="team-card card swiper-slide">
+								<img src="./assets/img/team-img4.jpg" alt="team img" class="img-fluid" />
+
+								<h4 class="fs-3 fw-bolder mt-4">Esther Amusana</h4>
+								<p>Director of external relations</p>
+							</article>
+
+							<article class="team-card card swiper-slide">
+								<img src="./assets/img/team-img7.jpg" alt="team img" class="img-fluid" />
+
+								<h4 class="fs-3 fw-bolder mt-4">Racheal Agbanagba</h4>
+								<p>Conference Chair</p>
+							</article>
+
+							<article class="team-card card swiper-slide">
+								<img src="./assets/img/team-img6.png" alt="team img" class="img-fluid" />
+
+								<h4 class="fs-3 fw-bolder mt-4">Racheal Agbanagba</h4>
+								<p>Conference Chair</p>
+							</article>
+
+							<article class="team-card card swiper-slide">
+								<img src="./assets/img/team-img7.jpg" alt="team img" class="img-fluid" />
+
+								<h4 class="fs-3 fw-bolder mt-4">Racheal Agbanagba</h4>
+								<p>Conference Chair</p>
+							</article>
+
+							<article class="team-card card swiper-slide">
+								<img src="./assets/img/team-img8.jpg" alt="team img" class="img-fluid" />
+
+								<h4 class="fs-3 fw-bolder mt-4">Racheal Agbanagba</h4>
+								<p>Conference Chair</p>
+							</article>
+
+							<article class="team-card card swiper-slide">
+								<img src="./assets/img/team-img9.jpg" alt="team img" class="img-fluid" />
+
+								<h4 class="fs-3 fw-bolder mt-4">Racheal Agbanagba</h4>
+								<p>Conference Chair</p>
+							</article>
+
+							<article class="team-card card swiper-slide">
+								<img src="./assets/img/team-img2.jpg" alt="team img" class="img-fluid" />
+
+								<h4 class="fs-3 fw-bolder mt-4">Racheal Agbanagba</h4>
+								<p>Conference Chair</p>
+							</article>
+						</div>
+
+						<div class="swiper-button-next">
+							<i class="ri-arrow-right-line"></i>
+						</div>
+						<div class="swiper-button-prev">
+							<i class="ri-arrow-left-line"></i>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!--==== Footer ====-->
+		<footer class="footer">
+			<div class="container">
+				<div class="row align-items-start g-5">
+					<div class="col-sm-12 col-md-6 col-lg-5">
+						<div class="footer-img">
+							<img src="./assets/img/TID LOGO.png" alt="footer-img" />
+						</div>
+					</div>
+
+					<div class="col-sm-12 col-md-6 col-lg-4">
+						<div class="">
+							<h6 class="footer-title fs-5 fw-medium mb-3">QUICK NAVIGATION</h6>
+
+							<ul class="footer-links">
+								<li class="mb-3">
+									<a href="#" class="footer-link fs-6">Home</a>
+								</li>
+								<li class="mb-3">
+									<a href="./about.html" class="footer-link fs-6">About</a>
+								</li>
+								<li class="mb-3">
+									<a href="#" class="footer-link fs-6">Start an Application</a>
+								</li>
+								<li class="mb-3">
+									<a href="#" class="footer-link fs-6">Support Us</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-sm-12 col-md-6 col-lg-3">
+						<div class="">
+							<h6 class="footer-title fs-5 fw-medium mb-3 text-uppercase">Reach us at:</h6>
+
+							<ul class="footer-social">
+								<a href="https://www.facebook.com/" target="_blank" class="footer-social-link">
+									<i class="ri-instagram-fill fs-3"></i>
+								</a>
+								<a href="https://www.instagram.com/" target="_blank" class="footer-social-link">
+									<i class="ri-twitter-x-fill fs-3"></i>
+								</a>
+								<a href="https://www.pinterest.com/" target="_blank" class="footer-social-link">
+									<i class="ri-linkedin-box-fill fs-3"></i>
+								</a>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="copy-section">
+			<div class="container py-4 text-white-50">
+				<div class="row col-12 m-0 align-items-center flex-wrap row-gap-3">
+					<div class="col-12 col-md-4 col-lg-3">
+						<p class="copy-description mb-0">2024 TID. All Rights Reserved</p>
+					</div>
+
+					<div class="col-12 col-md-8 col-lg-6">
+						<p class="copy-description mb-0">An Initiative of Society of Petroleum Engineers University of Lagos Student Chapter</p>
+					</div>
+
+					<div class="col-12 col-md-6 col-lg-3">
+						<p class="copy-description mb-0">Privacy Policy | Terms of Services</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--==== Swiper JS ====-->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<!--==== JS ====-->
+		<script src="./assets/js/main.js"></script>
+		<!--==== BOOTSTRAP JS ====-->
+		<script src="./assets/js/bootstrap.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+	</body>
+</html>

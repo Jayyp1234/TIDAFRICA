@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+	font-family: "Inter", sans-serif !important;
+}
+
+:root {
+	/* font */
+	--font-family: "Inter", "system-ui", "Helvetica";
+	/* colors */
+	--dark-blue-color: #01005c;
+	--black-color: #00001f;
+	--black-light-color: #5e5e5e;
+	--grey-color: #d7d7d7;
+	--white-color: #ffffff;
+	--white: #fff;
+	--dark-variant: 0, 0, 0;
+	--dark: rgba(var(--dark-variant), 1);
+	/* others */
+	--border-line-clr: #f2f3f5;
+	--size: 2rem;
+}
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	font-family: var(--font-family);
+	font-kerning: none;
+	image-rendering: optimizeQuality;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span:not(:has(img, .img-fluid)) {
+	image-rendering: pixelated;
+	text-rendering: geometricPrecision;
+}
+ul,
+li,
+p {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+a {
+	will-change: background-color, color;
+	transition: 300ms ease-in-out;
+	transition-property: background-color;
+	text-decoration: none;
+}
+button {
+	background-color: transparent;
+	border: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+	margin: 0;
+}
+svg {
+	--size: 1.3rem;
+	width: var(--size, 1.3rem);
+	height: var(--size, 1.3rem);
+	user-select: none;
+	pointer-events: none;
+}
+html {
+	scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+	width: 6px;
+}
+
+.btn {
+	padding: 8px 45px !important;
+}
+
+.btn-primary {
+	background-color: var(--dark-blue-color) !important;
+}
+
+.btn-out-primary {
+	color: var(--dark-blue-color);
+	border: 1px solid var(--dark-blue-color) !important;
+}
+
+.box {
+	width: 400px !important;
+}
+
+.pass-box {
+	position: relative !important;
+}
+
+label,
+.text {
+	font-size: 0.85rem !important;
+}
+
+.icon {
+	border: none !important;
+	background-color: rgba(255, 255, 255, 0);
+	position: absolute;
+	top: 4px;
+	right: 10px;
+	cursor: pointer;
+}

@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+	font-family: "Inter", sans-serif !important;
+}
+
+html {
+	scroll-behavior: smooth !important;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+:root {
+	/*========== Colors ==========*/
+	--dark-blue-color: #01005c;
+	--black-color: #00001f;
+	--black-light-color: #5e5e5e;
+	--grey-color: #d7d7d7;
+	--white-color: #ffffff;
+}
+
+.btn {
+	width: 100%;
+}
+
+.btn-primary {
+	display: inline-flex;
+	background-color: var(--dark-blue-color) !important;
+}
+
+.forgot-text {
+	color: #030229 !important;
+}
+
+.box-area {
+	width: 930px;
+}
+
+.left-box {
+	padding: 10px 15px 20px !important;
+}
+
+.right-box {
+	padding: 50px !important;
+	background-image: url(../img/Vector\ 2.png);
+	background-position: center;
+	background-size: contain;
+}
+
+label,
+.text {
+	font-size: 0.85rem !important;
+}
+
+.forgot {
+	display: flex;
+	flex-direction: column-reverse;
+	gap: 15px;
+}
+
+.icon {
+	border: none !important;
+	background-color: rgba(255, 255, 255, 0);
+	position: absolute;
+	top: 4px;
+	right: 10px;
+	cursor: pointer;
+}
+.v-main-inner {
+	min-height: 100vh;
+	min-height: 100dvh;
+}
+.v-right .v-image-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("../img/Vector\ 2.png");
+	overflow: hidden;
+	height: 100%;
+}
+.v-right .v-image-container .featured-img {
+	height: 600px;
+	overflow: hidden;
+	border-radius: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+.v-main .v-form .v-form-input .form-label {
+	margin-bottom: 3px;
+}
+.v-main .v-form .form-control {
+	min-height: 3rem;
+}
+.v-main form .form-control::placeholder {
+	font-size: 0.9rem;
+	opacity: 0.7;
+}
+.v-main .v-form .pass-box {
+	position: relative;
+}
+.v-main .v-form .pass-box .icon {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translate(-33%, -50%);
+}
+.v-main .v-form .pass-box .icon,
+.v-main .v-form .pass-box .icon i {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.v-main .v-action {
+	font-size: 0.9rem;
+	white-space: nowrap;
+	padding: 0.8rem 1rem;
+}
+@media all and (min-width: 768px) {
+	.v-main {
+		height: 100dvh;
+		height: 100vh;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.box-area {
+		margin: 0 10px;
+	}
+
+	.left-box {
+		padding: 20px 0 30px 0 !important;
+	}
+}
+
+@media only screen and (min-width: 767px) {
+	.btn {
+		display: inline-block;
+		width: 100px;
+	}
+
+	.forgot {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
