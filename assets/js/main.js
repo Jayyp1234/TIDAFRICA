@@ -16,10 +16,12 @@ var swiper = new Swiper(".energy-slider", {
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
+        dynamicBullets: true,
     },
     breakpoints: {
         320: {
             slidesPerView: 1,
+            effect: "fade",
         },
         480: {
             slidesPerView: 2,
@@ -33,11 +35,19 @@ var swiper = new Swiper(".energy-slider", {
     },
     mousewheel: true,
     keyboard: true,
+    effect: "coverflow",
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+    },
 });
 
 //Countdown
 let valueDisplays = document.querySelectorAll('.num');
-let interval = 10000;
+let interval = 3000;
 
 valueDisplays.forEach((valueDisplays) => {
     let startValue = 0;
@@ -108,4 +118,63 @@ var swiper = new Swiper(".partner-swiper", {
     },
     mousewheel: true,
     keyboard: true,
+});
+
+// Scroll Reveal Animation
+window.addEventListener('scroll', revealOnScroll);
+
+function revealOnScroll() {
+    var reveals = document.querySelectorAll('.reveal');
+    
+    for(var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+        
+        if(elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add('active');
+        } else {
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+
+// Add smooth scrolling to all links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if(targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if(targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+// Parallax effect for hero section
+window.addEventListener('scroll', function() {
+    const scrollPosition = window.pageYOffset;
+    const heroElements = document.querySelectorAll('.parallax');
+    
+    heroElements.forEach(element => {
+        const speed = element.getAttribute('data-speed') || 0.5;
+        element.style.transform = `translateY(${scrollPosition * speed}px)`;
+    });
+});
+
+// Preloader
+window.addEventListener('load', function() {
+    const preloader = document.querySelector('.preloader');
+    if(preloader) {
+        preloader.classList.add('preloader-hidden');
+        
+        setTimeout(() => {
+            preloader.style.display = 'none';
+        }, 1000);
+    }
 });

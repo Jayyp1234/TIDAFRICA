@@ -59,13 +59,16 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        
+        <!-- Particles.js -->
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 	</head>
 	<body>
-		<header>
+		<header class="sticky-top">
 			<nav class="navbar navbar-expand-lg">
 				<div class="container">
 					<a class="navbar-brand" href="index.html">
-						<img src="./assets/img/TID LOGO.png" alt="Logo image" class="img-fluid" />
+						<img src="./assets/img/TID LOGO.png" alt="Logo image" class="img-fluid logo-animation" />
 					</a>
 
 					<button
@@ -105,7 +108,7 @@
 						</ul>
 
 						<div>
-							<a href="login.html" class="btn btn-primary text-break fw-semibold" type="submit">Log In</a>
+							<a href="login.html" class="btn btn-primary text-break fw-semibold btn-glow" type="submit">Log In</a>
 						</div>
 					</div>
 				</div>
@@ -142,27 +145,30 @@
 		<!--==== Main ====-->
 		<main>
 			<!--==== Hero ====-->
-			<section class="hero-section section">
-				<div class="container">
+			<section class="hero-section section position-relative">
+                <!-- Particles Background -->
+                <div id="particles-js" class="particles-container"></div>
+                
+				<div class="container position-relative">
 					<div class="row align-items-center justify-content-center g-5">
 						<div class="col-12 col-lg-6">
-							<h1 class="hero-title fs-1 fw-bold mb-4 animate__fadeInLeft animate__animated">The Largest Student-Led Energy Conference in Africa</h1>
+							<h1 class="hero-title fs-1 fw-bold mb-4 text-gradient animate__animated animate__fadeInUp">The Largest Student-Led Energy Conference in Africa</h1>
 
-							<p class="animate__fadeInLeft animate__animated fs-sm-6 fs-md-5 fs-lg-5 fs-6 text-break mb-5">
+							<p class="animate__animated animate__fadeInUp animate__delay-1s fs-sm-6 fs-md-5 fs-lg-5 fs-6 text-break mb-5">
 								Engaging students and stakeholders in accelerating sustainable energy solutions.
 							</p>
 
-							<p class="animate__fadeInLeft animate__animated fs-sm-6 fs-md-5 fs-lg-5 fs-6 text-break mb-4">
+							<p class="animate__animated animate__fadeInUp animate__delay-2s fs-sm-6 fs-md-5 fs-lg-5 fs-6 text-break mb-4">
 								Have an innovative idea? Register for the TID 4.0 Energy Startup Pitch competition in a minute.
 							</p>
 
-							<div class="hero-btn animate__fadeInLeft animate__animated">
-								<a href="competitions.html" class="btn btn-primary text-break fw-semibold me-3">Apply Now</a>
-                                <a href="about.html" class="btn btn-outline-primary text-break fw-semibold">Learn More</a>
+							<div class="hero-btn animate__animated animate__fadeInUp animate__delay-3s">
+								<a href="competitions.html" class="btn btn-primary text-break fw-semibold me-3 btn-glow">Apply Now</a>
+                                <a href="about.html" class="btn btn-outline-primary text-break fw-semibold btn-outline-hover">Learn More</a>
 							</div>
                             
                             <!-- Countdown Timer -->
-                            <div class="mt-4 animate__fadeInLeft animate__animated">
+                            <div class="mt-4 animate__animated animate__fadeInUp animate__delay-3s">
                                 <div class="countdown-container">
                                     <div class="countdown-timer">
                                         <div id="countdown" class="d-flex gap-3">
@@ -191,7 +197,20 @@
 
 						<div class="col-12 col-lg-6">
 							<div class="v-image-container animate__animated animate__fadeInRight">
-								<img src="./assets/img/hero-img1.jpg" class="img-fluid" alt="" />
+								<img src="./assets/img/hero-img1.jpg" class="img-fluid floating-image" alt="" />
+                                <div class="image-overlay-effect"></div>
+                                <div class="floating-badge badge-1">
+                                    <i class="ri-lightbulb-flash-line"></i>
+                                    <span>Innovation</span>
+                                </div>
+                                <div class="floating-badge badge-2">
+                                    <i class="ri-global-line"></i>
+                                    <span>Sustainability</span>
+                                </div>
+                                <div class="floating-badge badge-3">
+                                    <i class="ri-team-line"></i>
+                                    <span>Collaboration</span>
+                                </div>
 							</div>
 						</div>
 					</div>
@@ -199,11 +218,11 @@
 			</section>
 
 			<!--==== Energy ====-->
-			<section class="section">
+			<section class="section energy-section">
 				<div class="container">
 					<div class="row mb-4">
 						<div class="col-12">
-							<h2 class="fs-1 fw-bolder mb-2" data-aos="fade-down">Energy Snapshots</h2>
+							<h2 class="fs-1 fw-bolder mb-2 text-gradient-alt" data-aos="fade-down">Energy Snapshots</h2>
 							<p class="fs-sm-6 fs-md-5 fs-lg-5 fs-6" data-aos="fade-down" data-aos-delay="200">
 								Experience the industry discourse through our lens.
 							</p>
@@ -290,48 +309,64 @@
 							</div>
 						</article>
 					</div>
+                    
+                    <!-- Add pagination -->
+                    <div class="swiper-pagination"></div>
 				</div>
 			</section>
 
 			<!--==== Impact ====-->
 			<section class="impact-section">
 				<div class="impact-overlay"></div>
+                <div class="impact-particles" id="impact-particles-js"></div>
 				<div class="container">
 					<div class="row">
 						<div class="col-12 mb-5 mb-sm-5 mb-md-4 mb-lg-4">
-							<h2 class="fs-1 text-sm-start text-md-center text-lg-start text-start fw-bolder">Our Impact</h2>
+							<h2 class="fs-1 text-sm-start text-md-center text-lg-start text-start fw-bolder text-glow">Our Impact</h2>
 						</div>
 					</div>
 
 					<div class="row col-12 m-0">
 						<div class="col-sm-12 col-md-6 col-lg-3">
-							<div class="impact-box text-center">
+							<div class="impact-box text-center" data-aos="zoom-in" data-aos-delay="100">
 								<h1 class="impact-title fw-bolder">
 									<span class="num" data-val="9"> 0 </span>
 								</h1>
 								<p>Countries influenced across Africa</p>
+                                <div class="impact-icon">
+                                    <i class="ri-earth-line"></i>
+                                </div>
 							</div>
 						</div>
 						<div class="col-sm-12 col-md-6 col-lg-3">
-							<div class="impact-box text-center">
+							<div class="impact-box text-center" data-aos="zoom-in" data-aos-delay="200">
 								<h1 class="impact-title fw-bolder"><span class="num" data-val="25"> 00 </span>+</h1>
 								<p>Universities across Africa</p>
+                                <div class="impact-icon">
+                                    <i class="ri-building-4-line"></i>
+                                </div>
 							</div>
 						</div>
 						<div class="col-sm-12 col-md-6 col-lg-3">
-							<div class="impact-box text-center">
+							<div class="impact-box text-center" data-aos="zoom-in" data-aos-delay="300">
 								<h1 class="impact-title fw-bolder">
 									<span class="num" data-val="2000"> 0000 </span>
 								</h1>
 								<p>Students empowered across Africa</p>
+                                <div class="impact-icon">
+                                    <i class="ri-user-star-line"></i>
+                                </div>
 							</div>
 						</div>
 						<div class="col-sm-12 col-md-6 col-lg-3">
-							<div class="impact-box text-center">
+							<div class="impact-box text-center" data-aos="zoom-in" data-aos-delay="400">
 								<h1 class="impact-title fw-bolder">
 									<span class="num" data-val="5"> 0 </span>
 								</h1>
 								<p>Critical sectors recognized</p>
+                                <div class="impact-icon">
+                                    <i class="ri-focus-3-line"></i>
+                                </div>
 							</div>
 						</div>
 					</div>
@@ -343,7 +378,7 @@
 				<div class="container">
 					<div class="row mb-5">
 						<div class="col-12 text-sm-start text-md-center text-lg-start text-start">
-							<h3 class="fs-1 fw-bolder mb-3" data-aos="fade-in">Our Events</h3>
+							<h3 class="fs-1 fw-bolder mb-3 text-gradient-alt" data-aos="fade-in">Our Events</h3>
 							<p class="fs-6 text-break" data-aos="fade-in" data-aos-delay="300">
 								From dynamic panel discussions to innovative hackathons and captivating keynote speeches, over the years, TID has curated various
 								engaging events that redefine the energy conference experience. Each event is meticulously crafted to inspire, educate, and spark
@@ -354,9 +389,16 @@
 
 					<div class="row g-sm-5 g-md-5 g-lg-4 g-5">
 						<div class="col-12 col-md-6 col-lg-4">
-							<div class="event-card w-100" data-aos="fade-right">
+							<div class="event-card w-100 event-card-animated" data-aos="fade-right">
 								<div class="event-img">
 									<img src="./assets/img/event-img1.jpg" class="card-img-top img-fluid" alt="..." />
+                                    <div class="event-overlay">
+                                        <div class="event-details">
+                                            <h4>TID Energy Startup Pitch</h4>
+                                            <p>Showcase your innovative energy solutions and win funding</p>
+                                            <a href="competitions.html" class="btn btn-sm btn-light">Learn More</a>
+                                        </div>
+                                    </div>
 								</div>
 
 								<p class="event-description fs-5 fw-medium m-0 p-0">TID Energy Startup Pitch</p>
@@ -364,9 +406,16 @@
 						</div>
 
 						<div class="col-12 col-md-6 col-lg-4">
-							<div class="event-card w-100" data-aos="fade-right" data-aos-delay="200">
+							<div class="event-card w-100 event-card-animated" data-aos="fade-right" data-aos-delay="200">
 								<div class="event-img">
 									<img src="./assets/img/event-img2.jpg" class="card-img-top img-fluid" alt="..." />
+                                    <div class="event-overlay">
+                                        <div class="event-details">
+                                            <h4>TID Innovation Challenge</h4>
+                                            <p>Solve real-world energy problems with creative solutions</p>
+                                            <a href="competitions.html" class="btn btn-sm btn-light">Learn More</a>
+                                        </div>
+                                    </div>
 								</div>
 
 								<p class="event-description fs-5 fw-medium m-0 p-0">TID Innovation Challenge</p>
@@ -374,9 +423,16 @@
 						</div>
 
 						<div class="col-12 col-md-6 col-lg-4">
-							<div class="event-card w-100" data-aos="fade-right" data-aos-delay="400">
+							<div class="event-card w-100 event-card-animated" data-aos="fade-right" data-aos-delay="400">
 								<div class="event-img">
 									<img src="./assets/img/event-img3.jpg" class="card-img-top img-fluid" alt="..." />
+                                    <div class="event-overlay">
+                                        <div class="event-details">
+                                            <h4>TID Publicity Walk</h4>
+                                            <p>Join us in raising awareness about sustainable energy solutions</p>
+                                            <a href="about.html" class="btn btn-sm btn-light">Learn More</a>
+                                        </div>
+                                    </div>
 								</div>
 
 								<p class="event-description fs-5 fw-medium m-0 p-0">TID Publicity Walk</p>
@@ -385,40 +441,67 @@
 					</div>
                     
                     <div class="text-center mt-5">
-                        <a href="competitions.html" class="btn btn-primary btn-lg">Apply for Competitions</a>
+                        <a href="competitions.html" class="btn btn-primary btn-lg btn-glow">Apply for Competitions</a>
                     </div>
 				</div>
 			</section>
             
             <!-- Sponsors Section -->
-            <section class="section">
+            <section class="section sponsors-section">
                 <div class="container">
                     <div class="row mb-4">
                         <div class="col-12 text-center">
-                            <h2 class="fs-1 fw-bolder mb-4" data-aos="fade-up">Our Sponsors & Partners</h2>
+                            <h2 class="fs-1 fw-bolder mb-4 text-gradient" data-aos="fade-up">Our Sponsors & Partners</h2>
                             <p class="fs-6" data-aos="fade-up" data-aos-delay="200">
                                 We're proud to collaborate with leading organizations committed to advancing sustainable energy solutions in Africa.
                             </p>
                         </div>
                     </div>
                     
-                    <div class="row g-4 justify-content-center align-items-center">
-                        <div class="col-6 col-md-4 col-lg-3 text-center" data-aos="fade-up">
-                            <img src="./assets/img/partner-img1.png" alt="Partner logo" class="img-fluid sponsor-logo" style="max-height: 80px;">
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="100">
-                            <img src="./assets/img/partner-img2.png" alt="Partner logo" class="img-fluid sponsor-logo" style="max-height: 80px;">
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="200">
-                            <img src="./assets/img/partner-img3.png" alt="Partner logo" class="img-fluid sponsor-logo" style="max-height: 80px;">
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="300">
-                            <img src="./assets/img/partner-img5.png" alt="Partner logo" class="img-fluid sponsor-logo" style="max-height: 80px;">
+                    <div class="sponsors-slider" data-aos="fade-up" data-aos-delay="300">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide text-center">
+                                    <img src="./assets/img/partner-img1.png" alt="Partner logo" class="img-fluid sponsor-logo">
+                                </div>
+                                <div class="swiper-slide text-center">
+                                    <img src="./assets/img/partner-img2.png" alt="Partner logo" class="img-fluid sponsor-logo">
+                                </div>
+                                <div class="swiper-slide text-center">
+                                    <img src="./assets/img/partner-img3.png" alt="Partner logo" class="img-fluid sponsor-logo">
+                                </div>
+                                <div class="swiper-slide text-center">
+                                    <img src="./assets/img/partner-img5.png" alt="Partner logo" class="img-fluid sponsor-logo">
+                                </div>
+                                <div class="swiper-slide text-center">
+                                    <img src="./assets/img/partner-img8.png" alt="Partner logo" class="img-fluid sponsor-logo">
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="text-center mt-5">
-                        <a href="contact.html" class="btn btn-outline-primary">Become a Sponsor</a>
+                    <div class="text-center mt-5" data-aos="fade-up">
+                        <a href="contact.html" class="btn btn-outline-primary btn-outline-hover">Become a Sponsor</a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Newsletter Section -->
+            <section class="newsletter-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="newsletter-box text-center" data-aos="zoom-in">
+                                <h3 class="mb-3">Stay Updated</h3>
+                                <p class="mb-4">Subscribe to our newsletter for the latest updates on TID events, competitions, and energy insights.</p>
+                                <form class="newsletter-form">
+                                    <div class="input-group">
+                                        <input type="email" class="form-control" placeholder="Enter your email address" required>
+                                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -507,7 +590,192 @@
 		<script src="./assets/js/bootstrap.js"></script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script>
-			AOS.init();
+			AOS.init({
+                duration: 1000,
+                once: false,
+                mirror: true
+            });
+            
+            // Particles.js configuration for hero section
+            particlesJS('particles-js', {
+                "particles": {
+                    "number": {
+                        "value": 80,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#01005c"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": false,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#01005c",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 2,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "grab"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 140,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+            
+            // Particles.js configuration for impact section
+            particlesJS('impact-particles-js', {
+                "particles": {
+                    "number": {
+                        "value": 50,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#ffffff"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.3,
+                        "random": true
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#ffffff",
+                        "opacity": 0.2,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 1,
+                        "direction": "none",
+                        "random": true,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "bubble"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "bubble": {
+                            "distance": 150,
+                            "size": 5,
+                            "duration": 2,
+                            "opacity": 0.8,
+                            "speed": 3
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
             
             // Countdown Timer
             // Set the date we're counting down to (example: October 15, 2024)
@@ -539,6 +807,74 @@
                     document.getElementById("countdown").innerHTML = "CONFERENCE IS LIVE!";
                 }
             }, 1000);
+            
+            // Initialize sponsors slider
+            const sponsorsSwiper = new Swiper('.sponsors-slider .swiper-container', {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 3,
+                    },
+                    768: {
+                        slidesPerView: 4,
+                    },
+                    1024: {
+                        slidesPerView: 5,
+                    },
+                },
+            });
+            
+            // Enhanced Energy Slider
+            var energySwiper = new Swiper('.energy-slider', {
+                slidesPerView: 'auto',
+                spaceBetween: 30,
+                centeredSlides: true,
+                loop: true,
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                effect: 'coverflow',
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                    },
+                    480: {
+                        slidesPerView: 2,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                    },
+                    1200: {
+                        slidesPerView: 4,
+                    },
+                },
+            });
+            
+            // Newsletter form submission
+            document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = this.querySelector('input[type="email"]').value;
+                alert(`Thank you for subscribing with ${email}! You'll receive our updates soon.`);
+                this.reset();
+            });
 		</script>
 	</body>
 </html>
