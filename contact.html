@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--==== TITLE ====-->
+		<title>Tid . Contact Us</title>
+
+		<!--==== CSS ====-->
+		<link rel="stylesheet" href="assets/css/style.css" />
+
+		<!--==== BOOTSTRAP CSS ====-->
+		<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+		<!--==== Remix Icon ====-->
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+		<!--==== Swiper Css ====-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg">
+				<div class="container">
+					<a class="navbar-brand" href="index.html">
+						<img src="./assets/img/TID LOGO.png" alt="Logo image" class="img-fluid" />
+					</a>
+
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse mt-4 mt-lg-0" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html"> Home </a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="./about.html"> About </a>
+							</li>
+                            
+                            <li class="nav-item">
+								<a class="nav-link" href="./competitions.html"> Competitions </a>
+							</li>
+                            
+                            <li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="./contact.html"> Contact </a>
+							</li>
+
+							<li class="nav-item">
+								<button type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#searchModal">
+									<i class="ri-search-line"></i>
+								</button>
+							</li>
+						</ul>
+
+						<div>
+							<a href="login.html" class="btn btn-primary text-break fw-semibold" type="submit">Log In</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<!-- modal @::start -->
+		<div
+			class="modal fade"
+			id="searchModal"
+			data-bs-backdrop="static"
+			data-bs-keyboard="false"
+			tabindex="-1"
+			aria-labelledby="staticBackdropLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header border-0">
+						<h1 class="modal-title fs-5" id="staticBackdropLabel">Search</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="v-form-input pb-4">
+							<label for="search" class="v-form-label">Enter search</label>
+							<input type="search" placeholder="Enter your search..." id="search" class="form-control" />
+						</div>
+						<button type="button" class="v-search">Search</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- modal @::end -->
+
+		<!--==== Main ====-->
+		<main>
+			<!--==== Contact Section ====-->
+			<section class="section">
+				<div class="container">
+					<div class="row align-items-center justify-content-center">
+						<div class="col-12 text-center">
+							<h1 class="fs-1 fw-bold mb-4" data-aos="fade-up">Get In Touch</h1>
+							<p class="fs-5 mb-5" data-aos="fade-up" data-aos-delay="200">
+								Have questions or want to collaborate? We'd love to hear from you!
+							</p>
+						</div>
+					</div>
+                    
+                    <div class="row g-5">
+                        <!-- Contact Form -->
+                        <div class="col-lg-7" data-aos="fade-right">
+                            <div class="card shadow-sm border-0 p-4">
+                                <div class="card-body">
+                                    <h3 class="mb-4">Send Us a Message</h3>
+                                    <form id="contactForm">
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <div class="form-group mb-3">
+                                                    <label for="name" class="form-label">Your Name</label>
+                                                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group mb-3">
+                                                    <label for="email" class="form-label">Email Address</label>
+                                                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group mb-3">
+                                            <label for="subject" class="form-label">Subject</label>
+                                            <input type="text" class="form-control" id="subject" placeholder="Enter subject">
+                                        </div>
+                                        
+                                        <div class="form-group mb-4">
+                                            <label for="message" class="form-label">Message</label>
+                                            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                                        </div>
+                                        
+                                        <button type="submit" class="btn btn-primary">Send Message</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Contact Information -->
+                        <div class="col-lg-5" data-aos="fade-left">
+                            <div class="card shadow-sm border-0 p-4 h-100">
+                                <div class="card-body">
+                                    <h3 class="mb-4">Contact Information</h3>
+                                    
+                                    <div class="d-flex mb-4">
+                                        <div class="me-3">
+                                            <i class="ri-map-pin-line" style="font-size: 1.5rem; color: var(--dark-blue-color);"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Address</h5>
+                                            <p>Department of Petroleum and Gas Engineering, Faculty of Engineering, University of Lagos, Akoka, Lagos, Nigeria</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex mb-4">
+                                        <div class="me-3">
+                                            <i class="ri-mail-line" style="font-size: 1.5rem; color: var(--dark-blue-color);"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Email</h5>
+                                            <p>info@tid.africa</p>
+                                            <p>competitions@tid.africa</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex mb-4">
+                                        <div class="me-3">
+                                            <i class="ri-phone-line" style="font-size: 1.5rem; color: var(--dark-blue-color);"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Phone</h5>
+                                            <p>+234 800 123 4567</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex mb-4">
+                                        <div class="me-3">
+                                            <i class="ri-time-line" style="font-size: 1.5rem; color: var(--dark-blue-color);"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Working Hours</h5>
+                                            <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mt-4">
+                                        <h5 class="fw-bold mb-3">Follow Us</h5>
+                                        <div class="d-flex gap-3">
+                                            <a href="https://www.instagram.com/tid.africa/" target="_blank" class="social-icon">
+                                                <i class="ri-instagram-fill" style="font-size: 1.5rem; color: var(--dark-blue-color);"></i>
+                                            </a>
+                                            <a href="https://twitter.com/TIDafrica" target="_blank" class="social-icon">
+                                                <i class="ri-twitter-x-fill" style="font-size: 1.5rem; color: var(--dark-blue-color);"></i>
+                                            </a>
+                                            <a href="https://www.linkedin.com/company/the-industry-discourse/" target="_blank" class="social-icon">
+                                                <i class="ri-linkedin-box-fill" style="font-size: 1.5rem; color: var(--dark-blue-color);"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sponsorship Section -->
+                    <div class="row mt-5 pt-5">
+                        <div class="col-12 text-center mb-4" data-aos="fade-up">
+                            <h2 class="fs-2 fw-bold">Become a Sponsor</h2>
+                            <p class="fs-5">Support the next generation of energy innovators</p>
+                        </div>
+                        
+                        <div class="col-lg-8 mx-auto" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card shadow-sm border-0 p-4">
+                                <div class="card-body">
+                                    <p class="mb-4">
+                                        By sponsoring The Industry Discourse, you'll gain visibility among future industry leaders, demonstrate your commitment to sustainable energy solutions, and help shape the future of Africa's energy landscape.
+                                    </p>
+                                    
+                                    <h5 class="fw-bold mb-3">Sponsorship Benefits:</h5>
+                                    <ul class="mb-4">
+                                        <li>Brand visibility to thousands of students and professionals</li>
+                                        <li>Access to top talent and innovative ideas</li>
+                                        <li>Networking opportunities with industry leaders</li>
+                                        <li>Demonstration of corporate social responsibility</li>
+                                        <li>Participation in panel discussions and workshops</li>
+                                    </ul>
+                                    
+                                    <div class="text-center">
+                                        <a href="mailto:partnerships@tid.africa" class="btn btn-primary">Contact for Sponsorship</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</section>
+		</main>
+
+		<!--==== Footer ====-->
+		<footer class="footer">
+			<div class="container">
+				<div class="row align-items-start g-5">
+					<div class="col-sm-12 col-md-6 col-lg-5">
+						<div class="footer-img">
+							<img src="./assets/img/TID LOGO.png" alt="footer-img" />
+						</div>
+                        <p class="mt-3">The Industry Discourse (TID) is the largest student-led energy conference in Sub-Saharan Africa, fostering collaboration between students, academia, and energy professionals.</p>
+					</div>
+
+					<div class="col-sm-12 col-md-6 col-lg-4">
+						<div class="">
+							<h6 class="footer-title fs-5 fw-medium mb-3">QUICK NAVIGATION</h6>
+
+							<ul class="footer-links">
+								<li class="mb-3">
+									<a href="index.html" class="footer-link fs-6">Home</a>
+								</li>
+								<li class="mb-3">
+									<a href="about.html" class="footer-link fs-6">About</a>
+								</li>
+								<li class="mb-3">
+									<a href="competitions.html" class="footer-link fs-6">Competitions</a>
+								</li>
+								<li class="mb-3">
+									<a href="contact.html" class="footer-link fs-6">Contact Us</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-sm-12 col-md-6 col-lg-3">
+						<div class="">
+							<h6 class="footer-title fs-5 fw-medium mb-3 text-uppercase">Reach us at:</h6>
+
+							<ul class="footer-social">
+								<a href="https://www.instagram.com/tid.africa/" target="_blank" class="footer-social-link">
+									<i class="ri-instagram-fill fs-3"></i>
+								</a>
+								<a href="https://twitter.com/TIDafrica" target="_blank" class="footer-social-link">
+									<i class="ri-twitter-x-fill fs-3"></i>
+								</a>
+								<a href="https://www.linkedin.com/company/the-industry-discourse/" target="_blank" class="footer-social-link">
+									<i class="ri-linkedin-box-fill fs-3"></i>
+								</a>
+							</ul>
+                            
+                            <p class="mt-3">
+                                <i class="ri-mail-line me-2"></i> info@tid.africa
+                            </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="copy-section">
+			<div class="container py-4 text-white-50">
+				<div class="row col-12 m-0 align-items-center flex-wrap row-gap-3">
+					<div class="col-12 col-md-4 col-lg-3">
+						<p class="copy-description mb-0">2024 TID. All Rights Reserved</p>
+					</div>
+
+					<div class="col-12 col-md-8 col-lg-6">
+						<p class="copy-description mb-0">An Initiative of Society of Petroleum Engineers University of Lagos Student Chapter</p>
+					</div>
+
+					<div class="col-12 col-md-6 col-lg-3">
+						<p class="copy-description mb-0">Privacy Policy | Terms of Services</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--==== Swiper JS ====-->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<!--==== JS ====-->
+		<script src="./assets/js/main.js"></script>
+		<!--==== BOOTSTRAP JS ====-->
+		<script src="./assets/js/bootstrap.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+            
+            // Form submission handling
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                // In a real implementation, you would send the form data to a server
+                alert('Thank you for your message! We will get back to you soon.');
+                this.reset();
+            });
+		</script>
+	</body>
+</html>

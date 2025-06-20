@@ -71,6 +71,46 @@ main {
 	color: var(--dark-blue-color);
 }
 
+/* Countdown Timer */
+.countdown-container {
+    margin-top: 20px;
+}
+
+.countdown-timer {
+    background-color: rgba(1, 0, 92, 0.05);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#countdown {
+    display: flex;
+    justify-content: space-between;
+}
+
+.countdown-item {
+    text-align: center;
+    min-width: 60px;
+}
+
+.countdown-item span:first-child {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--dark-blue-color);
+    display: block;
+}
+
+.countdown-label {
+    font-size: 0.8rem;
+    color: var(--black-light-color);
+}
+
+.countdown-info {
+    font-size: 0.9rem;
+    color: var(--black-light-color);
+    text-align: center;
+    margin-bottom: 0;
+}
+
 /*=== Energy ===*/
 .energy-slider {
 	padding: 10px 10px 55px 10px !important;
@@ -151,6 +191,34 @@ main {
 	text-align: center;
 	width: 100%;
 	z-index: var(--z-fixed);
+}
+
+/* Sponsor logos */
+.sponsor-logo {
+    transition: transform 0.3s ease;
+}
+
+.sponsor-logo:hover {
+    transform: scale(1.05);
+}
+
+/* Accordion styling for FAQs */
+.accordion-button:not(.collapsed) {
+    background-color: rgba(1, 0, 92, 0.05);
+    color: var(--dark-blue-color);
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(1, 0, 92, 0.1);
+}
+
+/* Social icons hover effect */
+.social-icon {
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
 }
 
 /*=== Footer ===*/

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--==== TITLE ====-->
+		<title>Tid . Competitions</title>
+
+		<!--==== CSS ====-->
+		<link rel="stylesheet" href="assets/css/style.css" />
+
+		<!--==== BOOTSTRAP CSS ====-->
+		<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+		<!--==== Remix Icon ====-->
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+		<!--==== Swiper Css ====-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg">
+				<div class="container">
+					<a class="navbar-brand" href="index.html">
+						<img src="./assets/img/TID LOGO.png" alt="Logo image" class="img-fluid" />
+					</a>
+
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse mt-4 mt-lg-0" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html"> Home </a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="./about.html"> About </a>
+							</li>
+                            
+                            <li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="./competitions.html"> Competitions </a>
+							</li>
+                            
+                            <li class="nav-item">
+								<a class="nav-link" href="./contact.html"> Contact </a>
+							</li>
+
+							<li class="nav-item">
+								<button type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#searchModal">
+									<i class="ri-search-line"></i>
+								</button>
+							</li>
+						</ul>
+
+						<div>
+							<a href="login.html" class="btn btn-primary text-break fw-semibold" type="submit">Log In</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<!-- modal @::start -->
+		<div
+			class="modal fade"
+			id="searchModal"
+			data-bs-backdrop="static"
+			data-bs-keyboard="false"
+			tabindex="-1"
+			aria-labelledby="staticBackdropLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header border-0">
+						<h1 class="modal-title fs-5" id="staticBackdropLabel">Search</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="v-form-input pb-4">
+							<label for="search" class="v-form-label">Enter search</label>
+							<input type="search" placeholder="Enter your search..." id="search" class="form-control" />
+						</div>
+						<button type="button" class="v-search">Search</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- modal @::end -->
+
+		<!--==== Main ====-->
+		<main>
+			<!--==== Hero ====-->
+			<section class="section">
+				<div class="container">
+					<div class="row align-items-center justify-content-center">
+						<div class="col-12 text-center">
+							<h1 class="fs-1 fw-bold mb-4" data-aos="fade-up">TID 4.0 Competitions</h1>
+							<p class="fs-5 mb-5" data-aos="fade-up" data-aos-delay="200">
+								Showcase your innovation and creativity in solving Africa's energy challenges
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Competition Cards -->
+			<section class="section">
+				<div class="container">
+					<div class="row g-4">
+						<!-- Energy Startup Pitch -->
+						<div class="col-md-6 col-lg-4" data-aos="fade-up">
+							<div class="card h-100 shadow-sm">
+								<img src="./assets/img/energy-img1.jpg" class="card-img-top" alt="Energy Startup Pitch">
+								<div class="card-body">
+									<h5 class="card-title fw-bold">Energy Startup Pitch</h5>
+									<p class="card-text">Present your innovative energy startup idea to industry experts and investors. Win funding and mentorship opportunities.</p>
+									<ul class="list-unstyled mt-3">
+										<li><i class="ri-calendar-line me-2"></i> Deadline: August 15, 2024</li>
+										<li><i class="ri-trophy-line me-2"></i> Prize: $5,000</li>
+										<li><i class="ri-team-line me-2"></i> Team Size: 2-5 members</li>
+									</ul>
+								</div>
+								<div class="card-footer bg-white border-0">
+									<a href="https://forms.gle/exampleStartupPitch" target="_blank" class="btn btn-primary w-100">Apply Now</a>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Innovation Challenge -->
+						<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+							<div class="card h-100 shadow-sm">
+								<img src="./assets/img/energy-img2.jpg" class="card-img-top" alt="Innovation Challenge">
+								<div class="card-body">
+									<h5 class="card-title fw-bold">Innovation Challenge</h5>
+									<p class="card-text">Develop practical solutions to specific energy challenges facing African communities. Focus on implementation and impact.</p>
+									<ul class="list-unstyled mt-3">
+										<li><i class="ri-calendar-line me-2"></i> Deadline: August 30, 2024</li>
+										<li><i class="ri-trophy-line me-2"></i> Prize: $3,000</li>
+										<li><i class="ri-team-line me-2"></i> Team Size: 3-6 members</li>
+									</ul>
+								</div>
+								<div class="card-footer bg-white border-0">
+									<a href="https://forms.gle/exampleInnovationChallenge" target="_blank" class="btn btn-primary w-100">Apply Now</a>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Research Showcase -->
+						<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+							<div class="card h-100 shadow-sm">
+								<img src="./assets/img/energy-img3.jpg" class="card-img-top" alt="Research Showcase">
+								<div class="card-body">
+									<h5 class="card-title fw-bold">Research Showcase</h5>
+									<p class="card-text">Present your academic research on energy technologies, policies, or market analysis relevant to Africa's energy transition.</p>
+									<ul class="list-unstyled mt-3">
+										<li><i class="ri-calendar-line me-2"></i> Deadline: September 10, 2024</li>
+										<li><i class="ri-trophy-line me-2"></i> Prize: Publication opportunity</li>
+										<li><i class="ri-user-line me-2"></i> Individual or team submission</li>
+									</ul>
+								</div>
+								<div class="card-footer bg-white border-0">
+									<a href="https://forms.gle/exampleResearchShowcase" target="_blank" class="btn btn-primary w-100">Apply Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+                    
+                    <!-- How to Apply Section -->
+                    <div class="row mt-5 pt-3">
+                        <div class="col-12">
+                            <h2 class="fs-2 fw-bold mb-4 text-center" data-aos="fade-up">How to Apply</h2>
+                            
+                            <div class="row g-4 mt-2">
+                                <div class="col-md-4" data-aos="fade-up">
+                                    <div class="text-center p-4 rounded-3 shadow-sm h-100">
+                                        <div class="mb-3">
+                                            <i class="ri-user-add-line" style="font-size: 2.5rem; color: var(--dark-blue-color);"></i>
+                                        </div>
+                                        <h5 class="fw-bold">1. Create Your Team</h5>
+                                        <p>Form a team according to the competition requirements and prepare your innovative idea.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="text-center p-4 rounded-3 shadow-sm h-100">
+                                        <div class="mb-3">
+                                            <i class="ri-file-list-3-line" style="font-size: 2.5rem; color: var(--dark-blue-color);"></i>
+                                        </div>
+                                        <h5 class="fw-bold">2. Complete Application</h5>
+                                        <p>Fill out the application form with your team details and project information.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="text-center p-4 rounded-3 shadow-sm h-100">
+                                        <div class="mb-3">
+                                            <i class="ri-send-plane-line" style="font-size: 2.5rem; color: var(--dark-blue-color);"></i>
+                                        </div>
+                                        <h5 class="fw-bold">3. Submit Your Entry</h5>
+                                        <p>Submit your completed application before the deadline and wait for confirmation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Section -->
+                    <div class="row mt-5 pt-3">
+                        <div class="col-12">
+                            <h2 class="fs-2 fw-bold mb-4 text-center" data-aos="fade-up">Frequently Asked Questions</h2>
+                            
+                            <div class="accordion" id="competitionFAQ" data-aos="fade-up">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Who can participate in TID competitions?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#competitionFAQ">
+                                        <div class="accordion-body">
+                                            TID competitions are open to undergraduate and graduate students from universities across Africa. Some competitions may have specific eligibility requirements, so please check the detailed guidelines for each competition.
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Is there a registration fee?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#competitionFAQ">
+                                        <div class="accordion-body">
+                                            No, participation in all TID competitions is completely free of charge.
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            How are winners selected?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#competitionFAQ">
+                                        <div class="accordion-body">
+                                            Entries are evaluated by a panel of judges comprising industry experts, academics, and professionals in the energy sector. Judging criteria include innovation, feasibility, potential impact, presentation quality, and alignment with Africa's energy needs.
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            Can I participate in multiple competitions?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#competitionFAQ">
+                                        <div class="accordion-body">
+                                            Yes, you can participate in multiple competitions, but please ensure you can commit the necessary time and resources to each submission. Each competition has its own requirements and deadlines.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact for Questions -->
+                    <div class="row mt-5 text-center">
+                        <div class="col-12" data-aos="fade-up">
+                            <h4 class="mb-3">Have more questions?</h4>
+                            <p>Contact our team at <a href="mailto:competitions@tid.africa">competitions@tid.africa</a> or visit our <a href="contact.html">contact page</a>.</p>
+                        </div>
+                    </div>
+				</div>
+			</section>
+		</main>
+
+		<!--==== Footer ====-->
+		<footer class="footer">
+			<div class="container">
+				<div class="row align-items-start g-5">
+					<div class="col-sm-12 col-md-6 col-lg-5">
+						<div class="footer-img">
+							<img src="./assets/img/TID LOGO.png" alt="footer-img" />
+						</div>
+                        <p class="mt-3">The Industry Discourse (TID) is the largest student-led energy conference in Sub-Saharan Africa, fostering collaboration between students, academia, and energy professionals.</p>
+					</div>
+
+					<div class="col-sm-12 col-md-6 col-lg-4">
+						<div class="">
+							<h6 class="footer-title fs-5 fw-medium mb-3">QUICK NAVIGATION</h6>
+
+							<ul class="footer-links">
+								<li class="mb-3">
+									<a href="index.html" class="footer-link fs-6">Home</a>
+								</li>
+								<li class="mb-3">
+									<a href="about.html" class="footer-link fs-6">About</a>
+								</li>
+								<li class="mb-3">
+									<a href="competitions.html" class="footer-link fs-6">Competitions</a>
+								</li>
+								<li class="mb-3">
+									<a href="contact.html" class="footer-link fs-6">Contact Us</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-sm-12 col-md-6 col-lg-3">
+						<div class="">
+							<h6 class="footer-title fs-5 fw-medium mb-3 text-uppercase">Reach us at:</h6>
+
+							<ul class="footer-social">
+								<a href="https://www.instagram.com/tid.africa/" target="_blank" class="footer-social-link">
+									<i class="ri-instagram-fill fs-3"></i>
+								</a>
+								<a href="https://twitter.com/TIDafrica" target="_blank" class="footer-social-link">
+									<i class="ri-twitter-x-fill fs-3"></i>
+								</a>
+								<a href="https://www.linkedin.com/company/the-industry-discourse/" target="_blank" class="footer-social-link">
+									<i class="ri-linkedin-box-fill fs-3"></i>
+								</a>
+							</ul>
+                            
+                            <p class="mt-3">
+                                <i class="ri-mail-line me-2"></i> info@tid.africa
+                            </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="copy-section">
+			<div class="container py-4 text-white-50">
+				<div class="row col-12 m-0 align-items-center flex-wrap row-gap-3">
+					<div class="col-12 col-md-4 col-lg-3">
+						<p class="copy-description mb-0">2024 TID. All Rights Reserved</p>
+					</div>
+
+					<div class="col-12 col-md-8 col-lg-6">
+						<p class="copy-description mb-0">An Initiative of Society of Petroleum Engineers University of Lagos Student Chapter</p>
+					</div>
+
+					<div class="col-12 col-md-6 col-lg-3">
+						<p class="copy-description mb-0">Privacy Policy | Terms of Services</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--==== Swiper JS ====-->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<!--==== JS ====-->
+		<script src="./assets/js/main.js"></script>
+		<!--==== BOOTSTRAP JS ====-->
+		<script src="./assets/js/bootstrap.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+	</body>
+</html>
